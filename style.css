@@ -138,7 +138,8 @@ main {
 #result-container {
     display: none;
     text-align: center;
-    background: white;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -8px -8px rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -147,19 +148,23 @@ main {
 
 /* Try Again Button */
 #result-container button {
-    background: #007bff;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.7);
+    margin: 20px 0px;
     padding: 12px;
+    width: 40%;
+    color: rgba(255, 255, 255, 0.893);
     border: none;
-    border-radius: 8px;
+    outline: none;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out; */
 }
 
 #result-container button:hover {
-    background: #0056b3;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset -3px -3px rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
 }
 
