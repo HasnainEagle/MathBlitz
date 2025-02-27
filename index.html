@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="dark">
       <h1>Math Quiz Challenge</h1>
+      <button id="theme-mode">Theme</button>
     </header>
 
     <main>
-      <div id="quiz-container">
-        <div class="quiz-wrapper">
+      <!-- <div id="quiz-container"> -->
+        <div id="quiz_container" class="quiz-wrapper dark_box">
           <div class="image-container">
             <img src="images/image_4.avif" alt="Math Concept" />
           </div>
@@ -28,7 +29,7 @@
             <p id="error-message" class="error"></p>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 
       <div id="result-container">
         <h2>Quiz Results</h2>
@@ -38,8 +39,8 @@
       </div>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Math Quiz. All Rights Reserved.</p>
+    <footer class="dark">
+      <p>&copy; 2025 Math Quiz. All Rights Reserved. By Group 6</p>
     </footer>
 
     <script src="main.js"></script>

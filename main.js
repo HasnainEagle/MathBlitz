@@ -1,3 +1,34 @@
+// theme effect 
+let themeEffect = document.querySelector("#theme-mode")
+let currentTheme = "light";
+
+themeEffect.addEventListener('click', () => {
+  console.log('theme effect');
+  if (currentTheme==="light") {
+    currentTheme = "dark";
+    document.querySelector("header").classList.add("light");
+    document.querySelector("header").classList.remove("dark");
+    document.querySelector("footer").classList.add("light");
+    document.querySelector("footer").classList.remove("dark");
+    document.querySelector("#quiz_container").classList.add("light_box");
+    document.querySelector("#quiz_container").classList.remove("dark_box");
+    console.log("theme changed to dark");
+  } else {
+    currentTheme = "light";
+    document.querySelector("header").classList.add("dark");
+    document.querySelector("header").classList.remove("light");
+    document.querySelector("footer").classList.add("dark");
+    document.querySelector("footer").classList.remove("light");
+    document.querySelector("#quiz_container").classList.add("dark_box");
+    document.querySelector("#quiz_container").classList.remove("light_box");
+    console.log("theme changed to light");
+    
+  }
+  
+})
+
+// ------------------------------------------
+
 let questions = [];
 let userAnswers = [];
 let correctAnswers = [];
