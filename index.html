@@ -21,21 +21,21 @@
           <div class="question-container">
             <h2 id="question-heading">Question 1</h2>
             <p id="question-text">Loading question...</p>
-            <input type="number" id="answer" placeholder="Enter your answer" />
+            <input type="number" id="answer" class="dark_input" placeholder="Enter your answer" />
             <div class="button-group">
-              <button onclick="nextQuestion()" class="next-btn">Next</button>
-              <button onclick="skipQuestion()" class="skip-btn">Skip</button>
+              <button onclick="nextQuestion()" class="next-btn dark_button">Next</button>
+              <button onclick="skipQuestion()" class="skip-btn dark_button">Skip</button>
             </div>
             <p id="error-message" class="error"></p>
           </div>
         </div>
       <!-- </div> -->
 
-      <div id="result-container">
+      <div id="result-container" class="dark_box">
         <h2>Quiz Results</h2>
         <div id="results-list"></div>
         <p id="final-score"></p>
-        <button onclick="location.reload()">🔄 Try Again</button>
+        <button onclick="location.reload()" id="retry_btn" class="dark_button">🔄 Try Again</button>
       </div>
     </main>
 

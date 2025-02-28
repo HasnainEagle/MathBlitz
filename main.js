@@ -6,21 +6,43 @@ themeEffect.addEventListener('click', () => {
   console.log('theme effect');
   if (currentTheme==="light") {
     currentTheme = "dark";
+    themeEffect.style.color = "black";
     document.querySelector("header").classList.add("light");
     document.querySelector("header").classList.remove("dark");
     document.querySelector("footer").classList.add("light");
     document.querySelector("footer").classList.remove("dark");
     document.querySelector("#quiz_container").classList.add("light_box");
     document.querySelector("#quiz_container").classList.remove("dark_box");
+    document.querySelector("#answer").classList.add("light_input");
+    document.querySelector("#answer").classList.remove("dark_input");
+    document.querySelector(".next-btn").classList.add("light_button");
+    document.querySelector(".next-btn").classList.remove("dark_button");
+    document.querySelector(".skip-btn").classList.add("light_button");
+    document.querySelector(".skip-btn").classList.remove("dark_button");
+    document.querySelector("#retry_btn").classList.add("light_button");
+    document.querySelector("#retry_btn").classList.remove("dark_button");
+    document.querySelector("#result-container").classList.add("light_box");
+    document.querySelector("#result-container").classList.remove("dark_box");
     console.log("theme changed to dark");
   } else {
     currentTheme = "light";
+    themeEffect.style.color = "rgba(255, 255, 255, 0.893)";
     document.querySelector("header").classList.add("dark");
     document.querySelector("header").classList.remove("light");
     document.querySelector("footer").classList.add("dark");
     document.querySelector("footer").classList.remove("light");
     document.querySelector("#quiz_container").classList.add("dark_box");
     document.querySelector("#quiz_container").classList.remove("light_box");
+    document.querySelector("#answer").classList.add("dark_input");
+    document.querySelector("#answer").classList.remove("light_input");
+    document.querySelector(".next-btn").classList.add("dark_button");
+    document.querySelector(".next-btn").classList.remove("light_button");
+    document.querySelector(".skip-btn").classList.add("dark_button");
+    document.querySelector(".skip-btn").classList.remove("light_button");
+    document.querySelector("#retry_btn").classList.add("dark_button");
+    document.querySelector("#retry_btn").classList.remove("light_button");
+    document.querySelector("#result-container").classList.add("dark_box");
+    document.querySelector("#result-container").classList.remove("light_box");
     console.log("theme changed to light");
     
   }
@@ -96,7 +118,7 @@ function skipQuestion() {
 }
 
 function showResults() {
-  document.getElementById("quiz-container").style.display = "none";
+  document.getElementById("quiz_container").style.display = "none";
   document.getElementById("result-container").style.display = "block";
 
   let resultsList = document.getElementById("results-list");
