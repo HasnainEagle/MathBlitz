@@ -3,7 +3,6 @@ body {
     font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
     margin: 0;
     padding: 0;
-    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 30%, rgba(0, 0, 0, 0.5) 100%); */
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.5));
     width: 100%;
     height: 100vh;
@@ -235,3 +234,28 @@ footer{
     background: rgba(0, 0, 0, 0.7);
 }
 
+
+
+/* responsive for mobile screen */
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .quiz-wrapper {
+        width: 75%;
+    }
+
+    #result-container {
+        width: 75%;
+    }
+
+    #result-container button {
+        width: 50%;
+    }
+}
